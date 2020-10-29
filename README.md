@@ -5,6 +5,7 @@ Trabajo plantas extintas
 
 Este trabajo corresponde a una practica para aprender a utilizar
 Rmarkdown, del curso de Derek Corcoran. Se utilizaran datos de plantas
-extintas en silvestria.
+extintas en silvestria segun la \[*IUCN*\]
+<https://www.iucnredlist.org/>.
 
 ## Subtitulo
