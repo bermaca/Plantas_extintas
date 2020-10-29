@@ -12,4 +12,33 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Este trabajo corresponde a una practica para aprender a utilizar Rmarkdown, del curso de Derek Corcoran. Se utilizaran datos de plantas extintas en silvestria segun la [*IUCN*] https://www.iucnredlist.org/.
 
+Cargamos las librerias
+
+```{r}
+library(tidyverse)
+```
+
+ahora el archivo
+
+```{r}
+plants <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-08-18/plants.csv")
+
+```
+
+
+# Filtro datos
+
+Filtrano datos para hacer ejercicio. El codigo siguiente es para resolver le problema del siguiente [slide] (https://derek-corcoran-barrios.github.io/Clase2/Clase2InvestigacionReproducible#29).
+
+```{r}
+Chile_plants <- plants %>%  filter(plants$country == "Chile") %>% 
+  select(binomial_name, country, red_list_category)
+
+Chile_plants
+```
+
+
+
+
+
 ## Subtitulo
